@@ -21,7 +21,7 @@
         }
       ],
       "download_note": "Unzip and run GameHub3D.exe. Windows may show a SmartScreen warning for new indie games — choose “More info → Run anyway”.",
-      "web": null,
+      "web": "play/gamehub-3d/",
       "description_html": "<p>Step into a candle-lit medieval tavern where every game in the hall is played on a real 3D table. One hub, four games, one Hall of Records.</p><ul><li><strong>Evolving Pong</strong> — the ball mutates through 11 geometric shapes, each with its own wild physics: curveball teardrops, axis-flipping crosses, paddle-threading rings. A goblin heckler drops by to insult your play.</li><li><strong>Hangman</strong> — guess the word before the guillotine falls, staged in a moonlit 3D execution yard with a full story sequence for every win and loss.</li><li><strong>Serpent</strong> — slither through a torch-lit courtyard devouring 15 villagers, leaving very permanent evidence.</li><li><strong>Connect Four: Jar the Goblins</strong> — severed heads vs goblins sealed in glass jars, with a depth-6 minimax AI on Hard and jars that slowly fill with blood.</li></ul><p>Every score is chronicled in the tavern's Hall of Records. All audio is procedurally generated; all textures are CC0 photoscans lit in real time.</p>",
       "meta": [
         ["Platform", "Windows 10/11 (64-bit)"],
