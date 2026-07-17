@@ -1,0 +1,37 @@
+{
+  "games": [
+    {
+      "id": "gamehub-3d",
+      "title": "GameHub 3D",
+      "tagline": "Four arcade classics reborn on a torch-lit tavern table — in full real-time 3D.",
+      "genre": "Arcade collection",
+      "cover": "assets/shots/hub.jpg",
+      "screenshots": [
+        "assets/shots/hub.jpg",
+        "assets/shots/connect4.jpg",
+        "assets/shots/hangman.jpg",
+        "assets/shots/serpent.jpg",
+        "assets/shots/pong.jpg"
+      ],
+      "downloads": [
+        {
+          "label": "Download for Windows",
+          "url": "https://github.com/xInfernoHDx/Gamehub/releases/download/gamehub3d-v1.0/GameHub3D-win64.zip",
+          "size": "284 MB"
+        }
+      ],
+      "download_note": "Unzip and run GameHub3D.exe. Windows may show a SmartScreen warning for new indie games — choose “More info → Run anyway”.",
+      "web": null,
+      "description_html": "<p>Step into a candle-lit medieval tavern where every game in the hall is played on a real 3D table. One hub, four games, one Hall of Records.</p><ul><li><strong>Evolving Pong</strong> — the ball mutates through 11 geometric shapes, each with its own wild physics: curveball teardrops, axis-flipping crosses, paddle-threading rings. A goblin heckler drops by to insult your play.</li><li><strong>Hangman</strong> — guess the word before the guillotine falls, staged in a moonlit 3D execution yard with a full story sequence for every win and loss.</li><li><strong>Serpent</strong> — slither through a torch-lit courtyard devouring 15 villagers, leaving very permanent evidence.</li><li><strong>Connect Four: Jar the Goblins</strong> — severed heads vs goblins sealed in glass jars, with a depth-6 minimax AI on Hard and jars that slowly fill with blood.</li></ul><p>Every score is chronicled in the tavern's Hall of Records. All audio is procedurally generated; all textures are CC0 photoscans lit in real time.</p>",
+      "meta": [
+        ["Platform", "Windows 10/11 (64-bit)"],
+        ["Controls", "Mouse + keyboard (W/S, arrows, Esc to pause)"],
+        ["Graphics", "Godot 4.7 Forward+ with Jolt physics — dedicated GPU recommended"],
+        ["Install size", "~600 MB unzipped"],
+        ["Price", "Free"],
+        ["Version", "1.0 — July 2026"],
+        ["Made with", "Godot 4.7.1 · built with AI assistance (Claude) · CC0 assets from Poly Haven"]
+      ]
+    }
+  ]
+}

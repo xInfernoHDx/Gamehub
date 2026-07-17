@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameHub — a hall of games</title>
+<meta name="description" content="GameHub: play and download original games. A growing hall of hand-built games — free to play, free to download.">
+<meta property="og:title" content="GameHub — a hall of games">
+<meta property="og:description" content="Play and download original games from the torch-lit hall.">
+<meta property="og:image" content="assets/shots/hub.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127918;</text></svg>">
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="hero-bg" role="presentation"></div>
+  <div class="hero-inner">
+    <p class="hero-kicker">~ a hall of games ~</p>
+    <h1>GameHub</h1>
+    <p class="hero-sub">Original games, built by hand and machine, served by torchlight.
+    Play in your browser or take them home.</p>
+    <a class="btn btn-gold" href="#games">Browse the hall</a>
+  </div>
+</header>
+
+<main>
+  <section id="games" aria-label="Game library">
+    <h2 class="section-title">The Games</h2>
+    <div class="grid" id="game-grid"><!-- cards injected from games.json --></div>
+  </section>
+</main>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="m-title">
+  <div class="modal-backdrop" data-close></div>
+  <article class="modal-card">
+    <button class="modal-x" data-close aria-label="Close">&times;</button>
+    <div class="m-gallery">
+      <img id="m-shot" alt="" >
+      <div class="m-thumbs" id="m-thumbs"></div>
+    </div>
+    <div class="m-body">
+      <h3 id="m-title"></h3>
+      <p class="m-tagline" id="m-tagline"></p>
+      <div class="m-actions" id="m-actions"></div>
+      <div class="m-desc" id="m-desc"></div>
+      <div class="m-meta" id="m-meta"></div>
+    </div>
+  </article>
+</div>
+
+<footer>
+  <p>Forged by <a href="https://github.com/xInfernoHDx" rel="author">xInfernoHDx</a>
+  · <a href="https://github.com/xInfernoHDx/Gamehub">source on GitHub</a></p>
+  <p class="fine">Games on this site are built with AI assistance (Claude) and use CC0 assets
+  (Poly Haven textures &amp; HDRIs) plus procedurally generated audio. Free to play, free to share.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
