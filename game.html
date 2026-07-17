@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127918;</text></svg>">
+</head>
+<body class="game-page">
+
+<header class="g-top">
+  <a class="back" href="./">&larr; Back to the hall</a>
+</header>
+
+<main class="g-main" id="g-main" hidden>
+  <h1 id="g-title"></h1>
+  <p class="m-tagline" id="g-tagline"></p>
+
+  <!-- playable embed (shown only when the game has a web build) -->
+  <section class="g-embed" id="g-embed" hidden>
+    <iframe id="g-frame" allow="fullscreen; gamepad; autoplay" loading="eager" title="Play"></iframe>
+    <div class="g-embed-bar">
+      <span>Playing in browser — best in Chrome or Edge.</span>
+      <button class="btn btn-ghost" id="g-fs">⛶ Fullscreen</button>
+    </div>
+  </section>
+
+  <div class="m-actions" id="g-actions"></div>
+
+  <section class="m-gallery g-gallery">
+    <img id="g-shot" alt="">
+    <div class="m-thumbs" id="g-thumbs"></div>
+  </section>
+
+  <section class="m-desc" id="g-desc"></section>
+  <section class="m-meta" id="g-meta"></section>
+</main>
+
+<main class="g-main" id="g-missing" hidden>
+  <h1>Game not found</h1>
+  <p>This chronicle isn't in the hall's records. <a href="./">Return to the games.</a></p>
+</main>
+
+<footer>
+  <p><a href="./">GameHub</a> · forged by <a href="https://github.com/xInfernoHDx" rel="author">xInfernoHDx</a></p>
+</footer>
+
+<script src="game.js"></script>
+</body>
+</html>

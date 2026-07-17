@@ -88,7 +88,7 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
 .card {
   background: var(--stone-7); border: 1px solid var(--stone-6); border-radius: 10px;
   overflow: hidden; cursor: pointer; text-align: left; padding: 0; color: inherit;
-  font: inherit; display: flex; flex-direction: column;
+  font: inherit; display: flex; flex-direction: column; text-decoration: none;
   transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
 }
 .card:hover, .card:focus-visible {
@@ -109,30 +109,13 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
 .badge.play { color: #241a0d; background: var(--gold); border-color: #8a6320; font-weight: 600; }
 .badge.dl { color: var(--ink); border-color: var(--gold); }
 
-/* ---- modal ---- */
-.modal { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 1.25rem; }
-.modal[hidden] { display: none; }
-.modal-backdrop { position: absolute; inset: 0; background: rgba(10,8,6,.82); backdrop-filter: blur(3px); }
-.modal-card {
-  position: relative; width: min(920px, 100%); max-height: 92vh; overflow-y: auto;
-  background: var(--stone-8); border: 1px solid var(--stone-6); border-radius: 12px;
-  box-shadow: 0 24px 70px rgba(0,0,0,.7);
-}
-.modal-x {
-  position: absolute; top: .5rem; right: .65rem; z-index: 2;
-  background: rgba(20,16,13,.72); color: var(--ink); border: 1px solid var(--stone-6);
-  border-radius: 8px; font-size: 1.5rem; line-height: 1; padding: .25rem .6rem; cursor: pointer;
-}
-.modal-x:hover { color: var(--gold-bright); border-color: var(--gold); }
-.m-gallery img#m-shot { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+/* ---- shared detail-page pieces (gallery, actions, meta) ---- */
 .m-thumbs { display: flex; gap: .5rem; padding: .6rem; background: var(--stone-9); overflow-x: auto; }
 .m-thumbs img {
   width: 108px; aspect-ratio: 16/9; object-fit: cover; border-radius: 4px;
   cursor: pointer; opacity: .55; border: 1px solid transparent;
 }
 .m-thumbs img.on, .m-thumbs img:hover { opacity: 1; border-color: var(--gold); }
-.m-body { padding: 1.4rem 1.6rem 1.8rem; }
-.m-body h3 { font-family: var(--display); font-size: 1.9rem; margin: 0; color: #f2e6c9; }
 .m-tagline { color: var(--gold-bright); font-style: italic; margin: .25rem 0 1rem; }
 .m-actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
 .m-actions .note { flex-basis: 100%; color: var(--ink-dim); font-size: .85rem; margin: .1rem 0 0; }
@@ -145,6 +128,28 @@ main { max-width: 72rem; margin: 0 auto; padding: 0 1.25rem 4rem; }
 }
 .m-meta dt { font-weight: 600; color: var(--ink); float: left; clear: left; width: 9.5rem; }
 .m-meta dd { margin: 0 0 .35rem 10rem; }
+
+/* ---- individual game page ---- */
+.g-top { max-width: 62rem; margin: 0 auto; padding: 1.1rem 1.25rem 0; }
+.back { font-family: var(--display); text-decoration: none; letter-spacing: .04em; }
+.back:hover { color: var(--gold-bright); }
+.g-main { max-width: 62rem; margin: 0 auto; padding: .8rem 1.25rem 3rem; }
+.g-main h1 {
+  font-family: var(--display); font-weight: 900; color: #f2e6c9;
+  font-size: clamp(2rem, 5vw, 3rem); margin: .4rem 0 0;
+}
+.g-embed {
+  margin: 1.2rem 0 1.4rem; border: 1px solid var(--stone-6); border-radius: 10px;
+  overflow: hidden; background: #000;
+  box-shadow: 0 12px 40px rgba(0,0,0,.55), 0 0 30px rgba(217,164,65,.08);
+}
+.g-embed iframe { display: block; width: 100%; aspect-ratio: 16/9; border: 0; }
+.g-embed-bar {
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: .55rem .9rem; background: var(--stone-8); color: var(--ink-dim); font-size: .88rem;
+}
+.g-gallery { border: 1px solid var(--stone-6); border-radius: 10px; overflow: hidden; margin: 1.4rem 0; }
+.g-gallery img#g-shot { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
 
 footer { border-top: 1px solid var(--stone-6); padding: 2rem 1.25rem 3rem; text-align: center; color: var(--ink-dim); }
 footer .fine { font-size: .82rem; max-width: 40rem; margin: .8rem auto 0; }
